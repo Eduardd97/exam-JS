@@ -1,0 +1,222 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    background: #b3e5fc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px 0 30px;
+    box-sizing: border-box;
+
+    .logo {
+        width: 100px;
+        height: auto;
+    }
+
+    .search-box {
+        display: flex;
+        width: 70%;
+        height: auto;
+        align-items: baseline;
+        position: relative;
+
+        .job-search::placeholder {
+            color: #616161;
+            padding: 0 0 0 20px;
+            font-size: 18px;
+        }
+
+        .material-icons {
+            position: absolute;
+            top: 5px;
+            right: 15px;
+            font-size: 35px;
+            color: #616161;
+            cursor: pointer;
+        }
+
+        .material-icons:hover {
+            color: #26a69a;
+        }
+    }
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: #e3f2fd;
+
+    .welcome-users {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+
+        .welcome-to-the-site {
+            font-size: 90px;
+            color: #0277bd;
+        }
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .favorite-vacancies {
+        display: flex;
+        width: 100%;
+        height: 100px;
+    }
+
+    .render-jobs{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 30px 0 30px 0;
+        
+        .card {
+            width: 360px;
+            height: 600px;
+            background: #b3e5fc;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .card-image {
+                position: relative;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    position: relative;
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 50%;
+                    margin-top: 15px;
+                    object-fit: cover;
+                    object-position: center;
+                }
+
+                img::after {
+                    content: attr(alt);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background: rgba(255, 255, 255, 1);
+                    padding: 45px;
+
+                    height: 100%;
+                    width: 120%;
+                }
+
+                .favorite-job {
+                    position: absolute;
+                    width: 35px;
+                    height: 35px;
+                    top: 120px;
+                    left: 225px;
+                }
+            }
+
+            .card-content {
+                position: relative;
+                height: 50%;
+
+                .card-title {
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    i {
+                        position: absolute;
+                        top: 9px;
+                        right: 0;
+                        font-size: 30px;
+                    }
+                }
+                p {
+                    position: absolute;
+                    bottom: -110px;
+                    left: 10px;
+
+                    a {
+                        color: #0277bd;
+                        font-size: 20px;
+                    }
+                }
+                .google-job-link-box {
+                    position: absolute;
+                    bottom: -122px;
+                    left: 300px;
+
+                    .google-job-link {
+
+                        img {
+                            width: 40px;
+                            height: 40px;
+                        }
+                    }
+                }
+            }
+
+            .card-reveal {
+                overflow-x: hidden;
+            }
+        }
+    }
+}
+
+.footer {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    background: #b3e5fc;
+    color: #0277bd;
+    font-size: 18px;
+    padding: 0 40px 0 40px;
+    box-sizing: border-box;
+    text-align: center;
+
+    .copyright {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+
+        .copyright-logo {
+            width: 20px;
+            height: 20px;
+            
+        }
+    }
+
+    
+    h4, h5 {
+        margin: 0;
+    }
+
+    h5 {
+        color: #0277bd;
+        cursor: pointer;
+    }
+}

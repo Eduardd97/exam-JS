@@ -1,0 +1,45 @@
+@media (max-width: 1300px) {
+  .main .render-jobs {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 1150px) {
+  .main .render-jobs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 760px) {
+  .main .favorite-vacancies {
+    margin: 40px 0 40px 0;
+  }
+  .main .welcome-users .welcome-to-the-site {
+    font-size: 70px;
+  }
+  .main .render-jobs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 0 5px 0;
+  }
+}
+@media (max-width: 400px) {
+  .header {
+    padding: 0 5px 0 5px;
+  }
+  .header .search-box .custom-search-button {
+    top: -15px;
+  }
+  .main .render-jobs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .main .render-jobs .card {
+    width: 350px;
+  }
+}
