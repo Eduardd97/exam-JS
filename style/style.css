@@ -24,6 +24,10 @@ body {
   align-items: baseline;
   position: relative;
 }
+.header .search-box .job-search {
+  font-size: 18px;
+  padding: 0 0 0 20px;
+}
 .header .search-box .job-search::-moz-placeholder {
   color: #616161;
   padding: 0 0 0 20px;

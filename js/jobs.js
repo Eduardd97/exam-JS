@@ -125,6 +125,7 @@ export class Jobs {
             jobSearchInput.value = "";
             
             welcomeUsers.classList.toggle("hidden");
+            welcomeUsers.classList.remove("favorite-vacancies")
         };
 
         // Initial input display setup for small screens
